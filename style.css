@@ -1,10 +1,10 @@
 :root {
-    --primary: #FF5A36;
-    --background: #F7F6F3;
+    --primary: #FF5835;
+    --background: #F3F1ED;
     --card: #FFFFFF;
-    --text-primary: #1D1D1F;
-    --text-secondary: #6E6E73;
-    --border: #E5E3DF;
+    --text-primary: #25211E;
+    --text-secondary: #746D67;
+    --border: #E5DED6;
 }
 
 * {
@@ -34,8 +34,8 @@ header {
 }
 
 .brand {
-    color: var(--primary);
-    font-size: 22px;
+    color: var(--text-primary);
+    font-size: 24px;
     font-weight: 800;
     text-decoration: none;
 }
@@ -109,7 +109,7 @@ header {
 
 .document p,
 .document li {
-    color: #444;
+    color: #514943;
 }
 
 .document ul {
