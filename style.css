@@ -1,94 +1,139 @@
 :root {
-  --primary: #FF5A36;
-  --background: #F7F6F3;
-  --card: #FFFFFF;
-  --text-primary: #1D1D1F;
-  --text-secondary: #6E6E73;
-  --border: #E5E3DF;
+    --primary: #FF5835;
+    --background: #F3F1ED;
+    --card: #FFFFFF;
+    --text-primary: #25211E;
+    --text-secondary: #746D67;
+    --border: #E5DED6;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--background); color: var(--text-primary); font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.7; }
-a { color: inherit; }
-.container { width: min(720px, calc(100% - 40px)); margin: 0 auto; }
-header { padding: 28px 0; }
-.brand { color: var(--primary); font-size: 22px; font-weight: 800; text-decoration: none; }
-.hero { min-height: 65vh; display: flex; align-items: center; }
-.hero h1 { margin: 0 0 18px; font-size: clamp(42px, 8vw, 72px); line-height: 1.05; letter-spacing: -2px; }
-.hero p { max-width: 520px; margin: 0; color: var(--text-secondary); font-size: 18px; }
-.hero .accent { color: var(--primary); }
-.links { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
-.button { padding: 11px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); text-decoration: none; font-size: 14px; font-weight: 600; }
-.document { padding: 50px 0 100px; }
-.document h1 { margin-bottom: 8px; font-size: 34px; letter-spacing: -1px; }
-.updated { margin-bottom: 48px; color: var(--text-secondary); font-size: 14px; }
-.document h2 { margin-top: 42px; font-size: 21px; }
-.document h3 { margin-top: 24px; font-size: 17px; }
-.document p,.document li { color: #444; }
-.document ul { padding-left: 22px; }
-footer { padding: 30px 0 50px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 13px; }
-@media (prefers-color-scheme: dark) { :root { --background:#111;--card:#1C1C1E;--text-primary:#F5F5F7;--text-secondary:#A1A1A6;--border:#333336; } .document p,.document li {color:#D1D1D6;} }
 
-/* Landing page — intentionally light to match POKIO's App Store artwork. */
-.landing-page { --background:#F5F3EF;--card:#fff;--text-primary:#251E1B;--text-secondary:#756D68;--border:#E7E0D8; background:var(--background);color:var(--text-primary);letter-spacing:-.025em; }
-.landing-page .site-shell { width:min(1140px,calc(100% - 56px));margin:0 auto; }
-.landing-page header.site-header { padding:0; border-bottom:1px solid rgba(37,30,27,.12); }
-.header-inner { display:flex;justify-content:space-between;align-items:center;min-height:86px; }
-.landing-page .brand { color:var(--text-primary);font-size:26px;font-weight:900;letter-spacing:-.065em;line-height:1; }
-.brand-dot,.accent,.end-brand span {color:var(--primary);}
-.site-nav {display:flex;gap:30px;}
-.site-nav a {font-size:14px;font-weight:700;text-decoration:none;}
-.site-nav a:hover,.site-footer a:hover {color:var(--primary);}
-.landing-hero {display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;min-height:750px;padding-top:100px;padding-bottom:110px;}
-.eyebrow {margin:0 0 24px;color:var(--primary);font-size:12px;font-weight:900;letter-spacing:.16em;}
-.hero-content h1 {font-size:clamp(60px,7vw,102px);letter-spacing:-.085em;line-height:1.12;margin:0 0 36px;font-weight:900;}
-.hero-description {font-weight:800;font-size:clamp(20px,2.2vw,27px);line-height:1.6;margin:0 0 22px;}
-.hero-support {color:var(--text-secondary);font-size:16px;line-height:1.9;margin:0 0 30px;}
-.primary-link {display:inline-flex;gap:24px;align-items:center;background:var(--text-primary);border-radius:100px;padding:15px 25px;color:#fff;text-decoration:none;font-size:14px;font-weight:800;}
-.primary-link:hover {background:var(--primary);}
-.hero-visual {background:#F0E6DD;min-height:500px;border-radius:32px;position:relative;overflow:hidden;padding:30px;display:flex;flex-direction:column;justify-content:space-between;}
-.visual-label {font-size:12px;font-weight:900;letter-spacing:.17em;color:#9A776B;}
-.place-illustration {height:380px;position:relative;}
-.illustration-dot {position:absolute;border-radius:50%;background:#F7B79F;}
-.dot-one {height:190px;width:190px;left:18%;top:12%;}
-.dot-two {height:145px;width:145px;right:5%;bottom:5%;background:#F8C978;}
-.dot-three {height:80px;width:80px;right:14%;top:10%;background:#C9D9C2;}
-.illustration-card {position:absolute;background:white;box-shadow:0 15px 45px rgba(41,31,24,.12);border:2px solid #2A221E;border-radius:19px;padding:20px 22px;display:flex;flex-direction:column;gap:10px;min-width:205px;}
-.illustration-card strong {font-size:21px;line-height:1.35;letter-spacing:-.06em;}
-.small-kicker {font-size:11px;letter-spacing:.12em;color:#A06E59;font-weight:800;}
-.card-one {top:5%;left:4%;transform:rotate(-9deg);}
-.card-two {top:18%;right:1%;transform:rotate(9deg);}
-.card-three {left:25%;bottom:1%;transform:rotate(-3deg);}
-.mini-pill {font-weight:800;color:var(--primary);font-size:13px;}
-.mini-stars {color:#EEB940;letter-spacing:3px;}
-.map-pins {color:var(--primary);font-size:17px;}
-.visual-footnote {margin:0;text-align:right;font-size:13px;font-weight:800;letter-spacing:.05em;}
-.feature-section {padding:120px 0;background:#fff;}
-.section-intro {margin-bottom:56px;}
-.section-intro h2,.reminder-inner h2,.end-section h2 {font-size:clamp(38px,5vw,64px);letter-spacing:-.075em;line-height:1.28;margin:0;font-weight:900;}
-.feature-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
-.feature-card {padding:32px;min-height:318px;background:#F7F5F2;border:1px solid #ECE6E0;border-radius:24px;display:flex;flex-direction:column;align-items:flex-start;}
-.feature-number {font-size:11px;letter-spacing:.13em;color:#9D8A7F;font-weight:900;}
-.feature-icon {margin:18px 0;color:var(--primary);font-size:35px;line-height:1;}
-.feature-card h3 {margin:0 0 14px;font-size:25px;line-height:1.35;letter-spacing:-.065em;}
-.feature-card p {font-size:14px;line-height:1.8;color:#716B66;margin:0;}
-.reminder-section {background:#FFE3D6;padding:105px 0;}
-.reminder-inner {display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.reminder-inner p:not(.eyebrow) {font-size:17px;line-height:1.9;margin:24px 0 0;}
-.reminder-inner small {font-size:13px;color:#806B61;}
-.reminder-note {background:#fff;border-radius:24px;padding:35px;box-shadow:0 18px 45px #C88E7850;display:flex;flex-direction:column;gap:15px;transform:rotate(2deg);}
-.note-brand {font-weight:900;color:var(--primary);letter-spacing:.1em;}
-.note-time {float:right;font-size:12px;color:#918984;}
-.reminder-note strong {font-size:27px;letter-spacing:-.06em;}
-.reminder-note>span:last-child {color:#706964;font-size:16px;}
-.end-section {padding-top:125px;padding-bottom:130px;text-align:center;}
-.end-brand {display:inline-block;margin-bottom:27px;font-weight:900;letter-spacing:-.07em;font-size:30px;}
-.end-section p {font-size:17px;color:var(--text-secondary);margin-top:25px;}
-.landing-page .site-footer {padding:42px 0;background:#251E1B;border:0;color:#D0C9C3;}
-.footer-inner {display:flex;align-items:flex-start;justify-content:space-between;gap:30px;}
-.landing-page .site-footer .brand {color:#fff;}
-.site-footer nav {display:flex;flex-wrap:wrap;gap:20px;}
-.site-footer nav a {font-size:13px;text-decoration:none;}
-.footer-inner p {margin:17px 0 0;font-size:12px;}
-@media (max-width:900px) { .landing-hero,.reminder-inner {grid-template-columns:1fr;} .landing-hero {gap:55px;min-height:0;padding-top:75px;padding-bottom:80px;} .hero-visual {min-height:480px;} .feature-grid {grid-template-columns:repeat(2,minmax(0,1fr));} }
-@media (max-width:600px) { .landing-page .site-shell {width:min(100% - 36px,480px);} .header-inner {min-height:70px;} .landing-page .brand {font-size:23px;} .site-nav {gap:13px;} .site-nav a {font-size:12px;} .landing-hero {padding-top:66px;padding-bottom:75px;} .hero-content h1 {font-size:clamp(52px,13vw,78px);} .hero-support br {display:none;} .hero-visual {min-height:390px;padding:19px;} .place-illustration {height:305px;} .illustration-card {min-width:145px;padding:12px 13px;border-radius:14px;} .illustration-card strong {font-size:16px;} .card-one {left:2%;top:8%;} .card-two {right:0;top:24%;} .card-three {bottom:0;left:16%;} .feature-section {padding:75px 0;} .feature-grid {grid-template-columns:1fr;} .feature-card {min-height:245px;} .reminder-section {padding:80px 0;} .reminder-inner {gap:35px;} .reminder-note {padding:26px;} .end-section {padding-top:90px;padding-bottom:95px;} .footer-inner {flex-direction:column;} .site-footer nav {gap:12px 20px;} }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(720px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+header {
+    padding: 28px 0;
+}
+
+.brand {
+    color: var(--text-primary);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    margin: 0 0 18px;
+    font-size: clamp(42px, 8vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    max-width: 520px;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 18px;
+}
+
+.hero .accent {
+    color: var(--primary);
+}
+
+.links {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 11px 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.document {
+    padding: 50px 0 100px;
+}
+
+.document h1 {
+    margin-bottom: 8px;
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+.updated {
+    margin-bottom: 48px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.document h2 {
+    margin-top: 42px;
+    font-size: 21px;
+}
+
+.document h3 {
+    margin-top: 24px;
+    font-size: 17px;
+}
+
+.document p,
+.document li {
+    color: #514943;
+}
+
+.document ul {
+    padding-left: 22px;
+}
+
+footer {
+    padding: 30px 0 50px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #111111;
+        --card: #1C1C1E;
+        --text-primary: #F5F5F7;
+        --text-secondary: #A1A1A6;
+        --border: #333336;
+    }
+
+    .document p,
+    .document li {
+        color: #D1D1D6;
+    }
+}
