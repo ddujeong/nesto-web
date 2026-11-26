@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nesto - 발견한 장소를 잊지 않고, 실제 방문까지 이어주는 개인 장소 아카이브">
-    <title>Nesto</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f3">
+  <meta name="description" content="POKIO 포키오 — 캡처한 맛집, 저장한 릴스, 가고 싶은 장소를 한곳에 모으고 지도와 컬렉션으로 관리하세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="포키오 POKIO — 가고 싶은 곳을 한곳에">
+  <meta property="og:description" content="캡처해 둔 맛집부터 릴스 속 장소까지, 발견부터 저장과 방문 기록까지.">
+  <title>포키오 POKIO — 가고 싶은 곳을 한곳에</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+<body class="landing-page">
+  <header class="site-header">
+    <div class="site-shell header-inner">
+      <a class="brand" href="./" aria-label="포키오 홈">POKIO<span class="brand-dot">.</span></a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#features">기능 소개</a>
+        <a href="#about">포키오 소개</a>
+      </nav>
+    </div>
+  </header>
 
-<body>
-
-    <header>
-        <div class="container">
-            <a class="brand" href="./">Nesto</a>
+  <main>
+    <section class="landing-hero site-shell" id="about">
+      <div class="hero-content">
+        <p class="eyebrow">내 장소를 모으는 가장 쉬운 방법</p>
+        <h1>가고 싶은 곳을<br><span class="accent">한곳에.</span></h1>
+        <p class="hero-description">캡처해 둔 맛집, 저장해 둔 릴스.<br>필요할 때 바로 찾을 수 있나요?</p>
+        <p class="hero-support">포키오는 발견한 장소를 저장하고, 지도에 모으고,<br>다녀온 기록까지 남길 수 있는 나만의 장소 아카이브예요.</p>
+        <a class="primary-link" href="#features">포키오 알아보기 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-visual" aria-label="포키오의 장소 관리 기능">
+        <div class="visual-label">MY PLACE ARCHIVE</div>
+        <div class="place-illustration">
+          <span class="illustration-dot dot-one" aria-hidden="true"></span>
+          <span class="illustration-dot dot-two" aria-hidden="true"></span>
+          <span class="illustration-dot dot-three" aria-hidden="true"></span>
+          <div class="illustration-card card-one"><span class="small-kicker">저장한 장소</span><strong>가고 싶은 곳만<br>차곡차곡</strong><span class="mini-pill">♡ 내 장소</span></div>
+          <div class="illustration-card card-two"><span class="small-kicker">나만의 지도</span><strong>어디에 있는지<br>한눈에</strong><span class="map-pins" aria-hidden="true">● &nbsp; ● &nbsp; ●</span></div>
+          <div class="illustration-card card-three"><span class="small-kicker">방문 기록</span><strong>다녀온 순간도<br>소중하게</strong><span class="mini-stars" aria-hidden="true">★★★★★</span></div>
         </div>
-    </header>
+        <p class="visual-footnote">발견 → 저장 → 방문 → 기록</p>
+      </div>
+    </section>
 
-    <main class="container hero">
-        <div>
-            <h1>
-                발견한 장소를<br>
-                <span class="accent">잊지 않도록.</span>
-            </h1>
-
-            <p>
-                저장해둔 장소를 관리하고,
-                근처에 도착하면 다시 알려주는 개인 장소 아카이브 Nesto.
-            </p>
-
-            <div class="links">
-                <a class="button" href="./privacy.html">
-                    개인정보처리방침
-                </a>
-
-                <a class="button" href="./terms.html">
-                    이용약관
-                </a>
-
-                <a class="button" href="./location.html">
-                    위치기반서비스 이용약관
-                </a>
-            </div>
+    <section class="feature-section" id="features">
+      <div class="site-shell">
+        <div class="section-intro"><p class="eyebrow">WHAT YOU CAN DO</p><h2>장소를 기억하는<br>나만의 방식</h2></div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-number">01 / SAVE</span><div class="feature-icon" aria-hidden="true">↗</div><h3>릴스 속 맛집도<br>쉽게 저장</h3><p>공유한 링크에서 발견한 장소를 찾아 저장해요. 장소를 찾지 못해도 직접 검색할 수 있어요.</p></article>
+          <article class="feature-card"><span class="feature-number">02 / CAPTURE</span><div class="feature-icon" aria-hidden="true">▣</div><h3>캡처해 둔 사진도<br>장소로 연결</h3><p>사진 속 장소명과 주소를 인식해, 검색하고 저장할 수 있어요.</p></article>
+          <article class="feature-card"><span class="feature-number">03 / MAP</span><div class="feature-icon" aria-hidden="true">⌖</div><h3>가고 싶은 곳을<br>지도 위에</h3><p>저장한 장소가 어디에 있는지 한눈에 확인해요.</p></article>
+          <article class="feature-card"><span class="feature-number">04 / COLLECTION</span><div class="feature-icon" aria-hidden="true">▤</div><h3>취향대로<br>차곡차곡</h3><p>장소 목록과 나만의 컬렉션으로 테마별 정리가 가능해요.</p></article>
+          <article class="feature-card"><span class="feature-number">05 / DISCOVER</span><div class="feature-icon" aria-hidden="true">✳</div><h3>오늘은<br>어디로 갈까?</h3><p>내 주변 장소와 저장한 취향에 어울리는 새로운 곳을 둘러봐요.</p></article>
+          <article class="feature-card"><span class="feature-number">06 / JOURNAL</span><div class="feature-icon" aria-hidden="true">♡</div><h3>다녀온 순간도<br>소중하게</h3><p>방문 날짜, 사진, 별점과 재방문 의사를 남겨 나만의 장소 기록을 만들어요.</p></article>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <div class="container">
-            © 2026 Nesto
-        </div>
-    </footer>
+    <section class="reminder-section">
+      <div class="site-shell reminder-inner">
+        <div><p class="eyebrow">SMART REMINDER</p><h2>가고 싶었던 곳이<br>내 근처에 있다면?</h2><p>저장한 장소 근처에 도착하면 잊지 않도록 알려줘요.<br><small>기기의 위치 및 알림 권한이 필요해요.</small></p></div>
+        <div class="reminder-note"><span class="note-brand">POKIO <span class="note-time">지금</span></span><strong>그린 누들 근처예요</strong><span>저장해 둔 곳이에요. 이번에 들러볼까요?</span></div>
+      </div>
+    </section>
+
+    <section class="end-section site-shell"><span class="end-brand">POKIO<span>.</span></span><h2>발견한 장소를<br>잊지 않도록.</h2><p>당신이 가고 싶은 모든 곳, 포키오에 모아두세요.</p></section>
+  </main>
+
+  <footer class="site-footer"><div class="site-shell footer-inner"><div><a class="brand" href="./">POKIO<span class="brand-dot">.</span></a><p>© 2026 POKIO</p></div><nav aria-label="정책 및 약관"><a href="./privacy.html">개인정보처리방침</a><a href="./terms.html">이용약관</a><a href="./location.html">위치기반서비스 이용약관</a></nav></div></footer>
 </body>
-
 </html>
